@@ -3,8 +3,21 @@ import logo from './logo.svg';
 import './App.css';
 import Welcome from './Welcome';
 import NumberForm from './NumberForm';
+import NumberResult from './NumberResult';
 
 class App extends Component {
+  constructor(props) {
+        super(props);
+        this.state = {};
+
+        this.handleFormSubmission = this.handleFormSubmission.bind(this);
+    }
+
+  handleFormSubmission(values){
+    alert('callback: ' + values.count + ',' + values.min + ',' + values.max);
+    console.log('test');
+  }
+
   render() {
     return (
       <div className="App">
@@ -16,7 +29,8 @@ class App extends Component {
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
         <Welcome/>
-        <NumberForm/>
+        <NumberForm handleFormSubmission={this.handleFormSubmission}/>
+        <NumberResult />
       </div>
     );
   }

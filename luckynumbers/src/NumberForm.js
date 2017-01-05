@@ -1,5 +1,4 @@
 import React from 'react';
-import NumberCount from './NumberCount';
 
 class NumberForm extends React.Component {
     constructor(props) {
@@ -29,8 +28,9 @@ class NumberForm extends React.Component {
     }
 
     handleSubmit(event) {
-        alert('A name was submitted: ' + this.state.count + ',' + this.state.min + ',' + this.state.max);
+        // alert('A name was submitted: ' + this.state.count + ',' + this.state.min + ',' + this.state.max);
         event.preventDefault();
+        this.props.handleFormSubmission(this.state);
     }
 
     render() {
@@ -51,7 +51,7 @@ class NumberForm extends React.Component {
                     </label>
                     <input type="submit" value="Submit" />
                 </form>
-                <NumberCount />
+
             </div>
         );
     }
