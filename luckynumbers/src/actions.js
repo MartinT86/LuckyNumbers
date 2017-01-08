@@ -1,5 +1,5 @@
-export const SET_NUMBERS = 'SET_NUMBERS'
+// export const SET_NUMBERS = 'SET_NUMBERS'
 
-export function setNumbers(numbers) {
-  return { type: SET_NUMBERS, numbers }
-}
+// export function setNumbers(numbers) {
+//   return { type: SET_NUMBERS, numbers }
+// }
