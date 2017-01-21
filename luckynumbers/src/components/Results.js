@@ -1,14 +1,9 @@
 import React, { PropTypes } from 'react'
 
-const Results = ({ Results, onClick }) => (
+const Results = ({ Results }) => (
     <div>
         <h2>numbers</h2>
         <h2>{Results}</h2>
-        <button type="button" 
-    onClick={e => {
-         e.preventDefault()
-         onClick()
-       }}>Click Me!</button>
     </div>
     
 )

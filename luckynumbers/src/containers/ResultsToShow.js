@@ -1,9 +1,8 @@
 import { connect } from 'react-redux'
 import Results from '../components/Results'
-import { updateNumber } from '../actions/index'  //to finish
+// import { updateNumber } from '../actions/index' 
 
 const mapStateToProps = (state) => {
-  console.log(state)
   return {
     Results: state.Results
   }
@@ -11,10 +10,9 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
-    onClick: () => {
-      console.log('clicked')
-      dispatch(updateNumber('3'))
-    }
+    // onClick: () => {
+    //   dispatch(updateNumber('3'))
+    // }
   }
 }
 
