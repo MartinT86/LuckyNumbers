@@ -1,4 +1,4 @@
-const Results = (state = '2', action) => {
+const Results = (state = 2, action) => {
   switch (action.type) {
     case 'SET_NUMBERS':
       return action.results

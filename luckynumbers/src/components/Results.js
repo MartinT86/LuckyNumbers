@@ -9,7 +9,7 @@ const Results = ({ Results }) => (
 )
 
 Results.propTypes = {
-      Results: PropTypes.string.isRequired,
+      Results: PropTypes.number.isRequired,
 }
 
 export default Results

@@ -2,6 +2,11 @@ import { connect } from 'react-redux'
 import Results from '../components/Results'
 // import { updateNumber } from '../actions/index' 
 
+// const CalculateResults = (state) => {
+
+//   return state.Max
+// }
+
 const mapStateToProps = (state) => {
   return {
     Results: state.Results

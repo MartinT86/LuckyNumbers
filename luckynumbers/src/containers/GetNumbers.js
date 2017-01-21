@@ -4,14 +4,14 @@ import { updateNumber } from '../actions/index'
 
 const mapStateToProps = (state) => {
   return {
-    // Results: state.Results
+    max: state.Max
   }
 }
 
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
-    onClick: () => {
-      dispatch(updateNumber('4'))
+    onClick: (max) => {
+      dispatch(updateNumber(max))
     }
   }
 }

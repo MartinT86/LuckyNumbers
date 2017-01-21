@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Button = ({ onClick }) => (
+const Button = ({ onClick, max }) => (
     <div>
         <button type="button" 
     onClick={e => {
          e.preventDefault()
-         onClick()
+         onClick(max)
        }}>Get Numbers!</button>
     </div>
     

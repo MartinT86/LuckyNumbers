@@ -4,3 +4,10 @@ export const updateNumber = (results) => {
     results
   }
 }
+
+export const setMax = (max) => {
+  return {
+    type: 'SET_MAX',
+    max
+  }
+}
