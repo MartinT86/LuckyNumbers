@@ -11,7 +11,8 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
     onClick: (max) => {
-      dispatch(updateNumber(max))
+      // need to set the new array here
+      dispatch(updateNumber([8,9]))
     }
   }
 }
