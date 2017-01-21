@@ -1,8 +1,8 @@
 import React, { PropTypes } from 'react'
 
-const NumberInput = ({ max, onchange }) => (
+const NumberInput = ({ max, onchange, title }) => (
     <div>
-        <h2>Max Number</h2>
+        <h2>{title}</h2>
         <input type="number" name="quantity" onChange={
             e => {
                 e.preventDefault()
@@ -16,6 +16,7 @@ const NumberInput = ({ max, onchange }) => (
 
 NumberInput.propTypes = {
       max: PropTypes.number,
+      title: PropTypes.string.isRequired,
 }
 
 export default NumberInput
