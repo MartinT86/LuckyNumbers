@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import MaxNumber from '../components/MaxNumber'
+import NumberInput from '../components/NumberInput'
 import { setMax } from '../actions/index'
 
 const mapStateToProps = (state) => {
@@ -19,6 +19,6 @@ const mapDispatchToProps = (dispatch, ownProps) => {
 const SetMax = connect(
   mapStateToProps,
   mapDispatchToProps
-)(MaxNumber)
+)(NumberInput)
 
 export default SetMax
