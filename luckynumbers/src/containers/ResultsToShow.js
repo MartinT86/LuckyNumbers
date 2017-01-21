@@ -1,5 +1,6 @@
 import { connect } from 'react-redux'
 import Results from '../components/Results'
+import { updateNumber } from '../actions/index'  //to finish
 
 const mapStateToProps = (state) => {
   console.log(state)
@@ -8,11 +9,12 @@ const mapStateToProps = (state) => {
   }
 }
 
-const mapDispatchToProps = (dispatch) => {
+const mapDispatchToProps = (dispatch, ownProps) => {
   return {
-    // numbers: () => {
-    //   dispatch(setVisibilityFilter(ownProps.filter))
-    // }
+    onClick: () => {
+      console.log('clicked')
+      dispatch(updateNumber('3'))
+    }
   }
 }
 
