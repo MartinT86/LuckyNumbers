@@ -1,13 +1,12 @@
 import React, { PropTypes } from 'react'
-
-// need to set a new Result component
+import Result from './Result'
 
 const Results = ({ Results }) => (
     <div>
         <h2>numbers</h2>
-        <h2>{Results[0]}</h2>
         {Results.map((item, index) =>
-            <h3 key={index}>{item}</h3>
+            // <h3 key={index}>{item}</h3>
+            <Result key={index} Result={item}/>
         )}
     </div>
     
