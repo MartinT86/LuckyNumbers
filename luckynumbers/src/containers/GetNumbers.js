@@ -1,6 +1,7 @@
 import { connect } from 'react-redux'
 import Button from '../components/Button'
 import { updateNumber } from '../actions/index'
+import getRandomIntInclusive from '../helpers/getRandomIntInclusive'
 
 const mapStateToProps = (state) => {
   return {
@@ -12,7 +13,8 @@ const mapDispatchToProps = (dispatch, ownProps) => {
   return {
     onClick: (max) => {
       // need to set the new array here
-      dispatch(updateNumber([8,9]))
+      var newArray = [getRandomIntInclusive(1, max),getRandomIntInclusive(1,max)]
+      dispatch(updateNumber(newArray))
     }
   }
 }
