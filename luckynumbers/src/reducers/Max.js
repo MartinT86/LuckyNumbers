@@ -1,6 +1,8 @@
+import * as constants from '../constants/actions'
+
 const Max = (state = 0, action) => {
   switch (action.type) {
-    case 'SET_MAX':
+    case constants.actions.setMax:
       return parseInt(action.max, 10)
     default:
       return state
