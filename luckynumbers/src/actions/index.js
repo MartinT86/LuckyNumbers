@@ -11,3 +11,10 @@ export const setMax = (max) => {
     max
   }
 }
+
+export const setMin = (min) => {
+  return {
+    type: 'SET_MIN',
+    min
+  }
+}

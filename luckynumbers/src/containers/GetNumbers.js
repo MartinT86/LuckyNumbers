@@ -5,15 +5,16 @@ import getRandomIntInclusive from '../helpers/getRandomIntInclusive'
 
 const mapStateToProps = (state) => {
   return {
-    max: state.Max
+    max: state.Max,
+    min: state.Min
   }
 }
 
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
-    onClick: (max) => {
+    onClick: (max, min) => {
       // need to set the new array here
-      var newArray = [getRandomIntInclusive(1, max),getRandomIntInclusive(1,max)]
+      var newArray = [getRandomIntInclusive(min, max),getRandomIntInclusive(min,max)]
       dispatch(updateNumber(newArray))
     }
   }

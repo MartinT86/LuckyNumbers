@@ -2,6 +2,7 @@ import React from 'react'
 import ResultsToShow from '../containers/ResultsToShow'
 import GetNumbers from '../containers/GetNumbers'
 import SetMax from '../containers/SetMax'
+import SetMin from '../containers/SetMin'
 // import Footer from './Footer'
 // import AddTodo from '../containers/AddTodo'
 // import VisibleTodoList from '../containers/VisibleTodoList'
@@ -9,6 +10,7 @@ import SetMax from '../containers/SetMax'
 const App = () => (
     <div>
         <h1>app js worked</h1>
+        <SetMin/>
         <SetMax/>
         <ResultsToShow/>
         <GetNumbers/>
