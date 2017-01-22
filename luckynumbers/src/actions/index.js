@@ -20,3 +20,10 @@ export const setMin = (min) => {
     min
   }
 }
+
+export const setCount = (count) => {
+  return {
+    type: constants.actions.setCount,
+    count
+  }
+}
