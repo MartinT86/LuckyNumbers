@@ -33,6 +33,9 @@ const mapDispatchToProps = (dispatch, ownProps) => {
       if(max === 0){
         messageArray.push('set a maximum')
       }
+      if(count > (max - min)){
+        messageArray.push('you need more numbers for you min and max')
+      }
       dispatch(addMessages(messageArray))
     }
   }
