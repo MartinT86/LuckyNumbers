@@ -27,3 +27,10 @@ export const setCount = (count) => {
     count
   }
 }
+
+export const addMessages = (messages) => {
+  return {
+    type: constants.actions.addMessages,
+    messages
+  }
+}
