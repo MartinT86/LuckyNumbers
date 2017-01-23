@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 import Button from '../components/Button'
-import { updateNumber } from '../actions/index'
+import { updateNumber, addMessages } from '../actions/index'
 import getRandomIntInclusive from '../helpers/getRandomIntInclusive'
 
 const mapStateToProps = (state) => {
@@ -19,8 +19,21 @@ const mapDispatchToProps = (dispatch, ownProps) => {
       for(var i = 0; i < count; i++){
         newArray.push(getRandomIntInclusive(min, max))
       }
-      // var newArray = [getRandomIntInclusive(min, max),getRandomIntInclusive(min,max)]
       dispatch(updateNumber(newArray))
+      var messageArray = [];
+      if(count === 0){
+        messageArray.push('Pick how many numbers you need')
+      }
+      if(min > max){
+        messageArray.push('The minimum needs to be less than the maximum')        
+      }
+      if(min === 0){
+        messageArray.push('Set a minimum')
+      }
+      if(max === 0){
+        messageArray.push('set a maximum')
+      }
+      dispatch(addMessages(messageArray))
     }
   }
 }
