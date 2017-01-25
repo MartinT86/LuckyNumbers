@@ -17,7 +17,7 @@ var setMessages = (max, min, count) => {
       if(max === 0){
         messageArray.push('set a maximum')
       }
-      if(count > (max - min)){
+      if((min !== 0) && (max !== 0) && (count > (max - min))){
         messageArray.push('you need more numbers for you min and max')
       }
   return messageArray
