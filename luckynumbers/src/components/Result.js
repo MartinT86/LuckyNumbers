@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react'
 
 const Result = ({ Result }) => (
-    <div>
+    <div className="result">
         <h3>{Result}</h3>
     </div>
     

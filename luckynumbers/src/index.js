@@ -7,6 +7,7 @@ import { createStore } from 'redux'
 
 import numbersApp from './reducers/index'
 import App from './components/App'
+import './css/Index.css';
 
 let store = createStore(numbersApp)
 
