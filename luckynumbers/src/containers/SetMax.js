@@ -5,7 +5,7 @@ import { setMax } from '../actions/index'
 const mapStateToProps = (state) => {
   return {
     max: state.max,
-    title: 'Set max number'
+    title: 'Set your maximum number'
   }
 }
 

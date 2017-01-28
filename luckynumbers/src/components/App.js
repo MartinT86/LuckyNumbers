@@ -12,14 +12,14 @@ import '../css/App.css';
 // import VisibleTodoList from '../containers/VisibleTodoList'
 
 const App = () => (
-    <div>
+    <div className="app">
         <h1 className="heading">Lucky Numbers</h1>
         <SetCount/>
         <SetMin/>
         <SetMax/>
         <AddMessages/>
-        <ResultsToShow/>
         <GetNumbers/>
+        <ResultsToShow/>
     </div>
 )
 

@@ -5,7 +5,7 @@ import { setCount } from '../actions/index'
 const mapStateToProps = (state) => {
   return {
     count: state.count,
-    title: 'Set how many numbers you need'
+    title: 'How many numbers do you need?'
   }
 }
 

@@ -3,7 +3,7 @@ import '../css/NumberInput.css';
 
 const NumberInput = ({ max, onchange, title }) => (
     <div>
-        <h2>{title}</h2>
+        <h2 className="input-title">{title}</h2>
         <input className="numberInput" type="number" name="quantity" onChange={
             e => {
                 e.preventDefault()

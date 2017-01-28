@@ -1,4 +1,5 @@
 import React, { PropTypes } from 'react'
+import '../css/Result.css';
 
 const Result = ({ Result }) => (
     <div className="result">

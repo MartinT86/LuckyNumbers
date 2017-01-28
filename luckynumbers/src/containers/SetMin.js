@@ -5,7 +5,7 @@ import { setMin } from '../actions/index'
 const mapStateToProps = (state) => {
   return {
     min: state.min,
-    title: 'Set min number'
+    title: 'Set your minimum number'
   }
 }
 

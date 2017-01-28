@@ -3,7 +3,6 @@ import Message from './Message'
 
 const Messages = ({ messages }) => (
     <div>
-        <h2>messages</h2>
         {messages.map((item, index) =>
             // <h3 key={index}>{item}</h3>
             <Message key={index} message={item}/>
