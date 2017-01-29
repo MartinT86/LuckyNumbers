@@ -11,11 +11,12 @@ function showHeading(check) {
 const Results = ({ Results }) => (
     <div>
         {showHeading(Results)}
-       
+        <div className="results-container">
         {Results.map((item, index) =>
             // <h3 key={index}>{item}</h3>
             <Result key={index} Result={item}/>
         )}
+        </div>
     </div>
     
 )
